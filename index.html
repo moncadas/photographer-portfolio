@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Photographer Portfolio</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <header>
+    <nav>               
+      <ul>  
+        <li id="phname">Name Surname</li>              
+        <li>          
+          <a href="#portfolio">portfolio</a>
+          <div class="dropdown-content">
+            <a href="#fashion" class="filterbtn">fashion</a>
+            <a href="#product" class="filterbtn">product</a>
+            <a href="#landscape" class="filterbtn">landscape</a>
+          </div>           
+        </li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>                            
+      </ul>
+    </nav>
+  </header>
+
+  <body>    
+    <div id="container">
+      <div id="portfolio">   
+        <h1>Portfolio</h1>  
+        <h2 id="fashion">Fashion</h2> 
+        <div class="gallery">                 
+          <div class="pic vert" style="background-image: url(./photos/fashion/1.jpg);"></div>
+          <div class="pic vert" style="background-image: url(./photos/fashion/2.jpg);"></div>
+          <div class="pic vert" style="background-image: url(./photos/fashion/3.jpg);"></div>        
+          <div class="pic vert" style="background-image: url(./photos/fashion/4.jpg);"></div>
+          <div class="pic vert" style="background-image: url(./photos/fashion/5.jpg);"></div>
+          <div class="pic vert" style="background-image: url(./photos/fashion/6.jpg);"></div>
+        </div>  
+        <h2 id="product">Product</h2> 
+        <div class="gallery">   
+          <div class="pic hor" style="background-image: url(./photos/product/1.jpg);"></div>
+          <div class="pic hor" style="background-image: url(./photos/product/2.jpg);"></div>
+          <div class="pic vert" style="background-image: url(./photos/product/3.jpg);"></div>                
+          <div class="pic vert" style="background-image: url(./photos/product/4.jpg);"></div>
+          <div class="pic vert" style="background-image: url(./photos/product/5.jpg);"></div>          
+        </div>  
+        <h2 id="landscape">Landscape</h2> 
+        <div class="gallery">  
+          <div class="pic hor" style="background-image: url(./photos/landscape/1.jpg);"></div>
+          <div class="pic hor" style="background-image: url(./photos/landscape/2.jpg);"></div>
+          <div class="pic hor" style="background-image: url(./photos/landscape/3.jpg);"></div>  
+        </div> 
+      </div>                                                                   
+      
+      <div id="about">
+        <h1>About</h1>      
+        <div id ="phphoto"> 
+          <img  src="./photos/logos/undraw_polaroid_gg6n.svg">        
+        </div>        
+        <div id="description">
+          <h3>Who is /name/?</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dui orci, finibus sit amet hendrerit non, commodo et sapien. Aenean semper efficitur dictum. Sed ac lectus sagittis, dapibus nisi sit amet, tempus lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sollicitudin blandit sodales. Maecenas venenatis elit quis lectus convallis, eget facilisis lacus tristique. In tempor ante et nibh pulvinar porttitor. Etiam sed est vel lorem convallis lobortis. Etiam placerat tellus neque, eu posuere ipsum finibus at. Nunc fermentum eget turpis at blandit.
+          </p> 
+        </div>                     
+        <img src="">
+      </div>
+  
+      <div id="contact">
+        <h1>Contact</h1>    
+        <form id="contactform">
+          <label for="name">Name</label>
+          <input id="name"  type="text" placeholder="Your name...">  
+  
+          <label for="surname">Surname</label>
+          <input id="surname"  type="text" placeholder="Your surname...">        
+  
+          <label for="question">Your question</label>
+          <textarea id="question"  placeholder="What do you want to know?" style="height: 150px;"></textarea>
+        
+          <input type="submit" onclick="return confirm('Thanks for contacting me, I will get in touch as soon as possible')" value="Submit">
+        </form>   
+
+        <footer> 
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="./photos/logos/ig.png">
+              </a>  
+            </li>            
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="./photos/logos/fb.png">
+              </a>  
+            </li>
+          </ul>                                                              
+        </footer>    
+      </div>                               
+    </div>
+  </body>
+</html>
