@@ -4,7 +4,8 @@
 First project made in HTML and CSS, made in about 10 hours.
 
 Every photo used as placeholder is downloaded from https://www.pexels.com/ .
-**Free for any usages**
+
+**The project is free for any usages**
 
 ## Usage
 The user can navigate through the section of this one-page site by clicking on the header's sections.
