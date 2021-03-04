@@ -6,21 +6,23 @@
     <link href="./style.css" type="text/css" rel="stylesheet">    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./script.js" type="text/javascript" ></script>
   </head>
 
   <header>
-    <nav>               
+    <nav class="background">               
       <ul>  
         <li id="phname">Name Surname</li>              
         <li>          
-          <a href="#portfolio">portfolio</a>
-          <div class="dropdown-content">
-            <a href="#fashion" class="filterbtn">fashion</a>
-            <a href="#product" class="filterbtn">product</a>
-            <a href="#landscape" class="filterbtn">landscape</a>
+          <a href="#portfolio" class="background">portfolio</a>
+          <div class="dropdown-content background">
+            <a class="filterbtn" onclick="filterPhotos('portrait')">portrait</a>
+            <a class="filterbtn" onclick="filterPhotos('product')">product</a>
+            <a class="filterbtn" onclick="filterPhotos('landscape')">landscape</a>
+            <a class="filterbtn" onclick="filterPhotos('')">all</a>
           </div>           
         </li>
-        <li><a href="#about">about</a></li>
+        <li><a href="#about" >about</a></li>
         <li><a href="#contact">contact</a></li>                            
       </ul>
     </nav>
@@ -29,36 +31,30 @@
   <body>    
     <div id="container">
       <div id="portfolio">   
-        <h1>Portfolio</h1>  
-        <h2 id="fashion">Fashion</h2> 
+        <h1>Portfolio</h1>          
         <div class="gallery">                 
-          <div class="pic vert" style="background-image: url(./photos/fashion/1.jpg);"></div>
-          <div class="pic vert" style="background-image: url(./photos/fashion/2.jpg);"></div>
-          <div class="pic vert" style="background-image: url(./photos/fashion/3.jpg);"></div>        
-          <div class="pic vert" style="background-image: url(./photos/fashion/4.jpg);"></div>
-          <div class="pic vert" style="background-image: url(./photos/fashion/5.jpg);"></div>
-          <div class="pic vert" style="background-image: url(./photos/fashion/6.jpg);"></div>
-        </div>  
-        <h2 id="product">Product</h2> 
-        <div class="gallery">   
-          <div class="pic hor" style="background-image: url(./photos/product/1.jpg);"></div>
-          <div class="pic hor" style="background-image: url(./photos/product/2.jpg);"></div>
-          <div class="pic vert" style="background-image: url(./photos/product/3.jpg);"></div>                
-          <div class="pic vert" style="background-image: url(./photos/product/4.jpg);"></div>
-          <div class="pic vert" style="background-image: url(./photos/product/5.jpg);"></div>          
-        </div>  
-        <h2 id="landscape">Landscape</h2> 
-        <div class="gallery">  
-          <div class="pic hor" style="background-image: url(./photos/landscape/1.jpg);"></div>
-          <div class="pic hor" style="background-image: url(./photos/landscape/2.jpg);"></div>
-          <div class="pic hor" style="background-image: url(./photos/landscape/3.jpg);"></div>  
+          <div class="pic vert portrait" style="background-image: url(https://images.pexels.com/photos/1250426/pexels-photo-1250426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic vert portrait" style="background-image: url(https://images.pexels.com/photos/1627936/pexels-photo-1627936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic vert portrait" style="background-image: url(https://images.pexels.com/photos/5373737/pexels-photo-5373737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>        
+          <div class="pic vert portrait" style="background-image: url(https://images.pexels.com/photos/5273717/pexels-photo-5273717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic vert portrait" style="background-image: url(https://images.pexels.com/photos/3270230/pexels-photo-3270230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic vert portrait" style="background-image: url(https://images.pexels.com/photos/3279545/pexels-photo-3279545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic hor product" style="background-image: url(https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic hor product" style="background-image: url(https://images.pexels.com/photos/341523/pexels-photo-341523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic hor product" style="background-image: url(https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic vert product" style="background-image: url(https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>                
+          <div class="pic vert product" style="background-image: url(https://images.pexels.com/photos/2587370/pexels-photo-2587370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>          
+          <div class="pic vert product" style="background-image: url(https://images.pexels.com/photos/1279107/pexels-photo-1279107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>          
+          <div class="pic hor landscape" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic hor landscape" style="background-image: url(https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>
+          <div class="pic hor landscape" style="background-image: url(https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"></div>  
         </div> 
       </div>                                                                   
       
       <div id="about">
         <h1>About</h1>      
         <div id ="phphoto"> 
-          <img  src="./photos/logos/undraw_polaroid_gg6n.svg">        
+          <img  src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/Landscape_mode_re_r964.svg">        
         </div>        
         <div id="description">
           <h3>Who is /name/?</h3>
@@ -69,9 +65,9 @@
         <img src="">
       </div>
   
-      <div id="contact">
+      <div id="contact" style="height: 50rem;">
         <h1>Contact</h1>    
-        <form id="contactform">
+        <form id="contactform" style="height: 27rem;">
           <label for="name">Name</label>
           <input id="name"  type="text" placeholder="Your name...">  
   
@@ -81,24 +77,24 @@
           <label for="question">Your question</label>
           <textarea id="question"  placeholder="What do you want to know?" style="height: 150px;"></textarea>
         
-          <input type="submit" onclick="return confirm('Thanks for contacting me, I will get in touch as soon as possible')" value="Submit">
+          <input type="submit" onclick="sendMail(); return false" value="Submit">
         </form>   
-
-        <footer> 
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank">
-                <img src="./photos/logos/ig.png">
-              </a>  
-            </li>            
-            <li>
-              <a href="https://www.facebook.com/" target="_blank">
-                <img src="./photos/logos/fb.png">
-              </a>  
-            </li>
-          </ul>                                                              
-        </footer>    
       </div>                               
+
+      <footer class="background"> 
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="https://img.icons8.com/metro/48/ffffff/instagram-new.png">
+            </a>  
+          </li>            
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="https://img.icons8.com/android/48/ffffff/facebook-new.png">
+            </a>  
+          </li>
+        </ul>                                                              
+      </footer>    
     </div>
   </body>
 </html>
