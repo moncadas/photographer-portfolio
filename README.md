@@ -2,14 +2,12 @@
  
 ## Personal note
 First project made in HTML and CSS, made in about 10 hours.
-
-Every photo used as placeholder is downloaded from https://www.pexels.com/ .
+04/03/2021 edit: added two function in JS.
 
 **The project is free for any usages**
 
 ## Usage
 The user can navigate through the section of this one-page site by clicking on the header's sections.
 
-The **portfolio** section is a drop-down menu in which the user can select the specific type of photo to navigate to; in a future version this menu will filter the photos on the main page.
-
-The site is responsive and should be seen correctly both via computer and smartphone.
+The **portfolio** section of the header is a drop-down menu in which the user can select the specific type of photo to see.
+To restore the initial view, the user can click on "All".
